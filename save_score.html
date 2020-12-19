@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save That Score!</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <!--Save Score/Type in Name or initials-->
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8" id="box">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Save Your Score!</h3>
+
+                    </div>
+
+                    <div class="panel-body">
+                        <form>
+                            <h3 id="save_score">Score:</h3>
+                            <br>
+                            <label style="font-weight: bold;">Name</label>
+                            <div class="form-group">
+
+                                <input type="text" name="Name" id="initials" placeholder="Name" class="form-control"
+                                    style="width: 150px">
+                            </div>
+                            <button disabled type="submit" id="submit" class="btn btn-primary submit"
+                                onclick="saveHighscore(event)">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src=save_score.js></script>
+</body>
+
+</html>

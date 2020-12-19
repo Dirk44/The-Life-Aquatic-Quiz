@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Time!</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!--Navigation bar-->
+
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid" style="border-bottom-style: solid;">
+
+
+
+            <button id="viewHighscores" class="nav-item nav-link">View Highscores
+                <div id="highScore1" class="hide">
+                    <h5><u>Top Scores</u></h5>
+                    <ol id="topScoresList">
+                    </ol>
+
+                </div>
+
+            </button>
+
+
+
+
+            <!-- <div class="col-md-1 highscore1" id="highscore">0</div> -->
+            <h1 id="navbar-title">Timed Quiz Game</h1>
+            <table id=timers>
+                <tr>
+                    <td class="time-remaining"> Time remaining: </td>
+                    <td> <span id="counter" class="timer">0</span> </td>
+                </tr>
+                <!-- <tr>
+                  <td>Time left for Question:</td>
+                  <td> <span id="quesTimer" class="nav-item"></span> </td>
+                </tr> -->
+            </table>
+        </div>
+
+    </nav>
+
+
+<!--Main container for start button and questions. -->
+
+    <main class="container">
+
+        <div class="row-lg-8" id="choices">
+            <section class="col-lg-8 offset-lg-2">
+                <h3 id="welcome">Welcome to The Life Aquatic Quiz</h3>
+                <div class="buttons">
+                    <button id="start" class="start btn"> Start Quiz </button>
+                </div>
+
+
+
+                <div id="question-container" class="hide">
+                    <div id="question" class="questions">Question</div>
+                    <div id="answer" class="btn-grid ">
+
+                        <button id="A" class="btnR">A</button>
+                        <button id="B" class="btnR">B</button>
+                        <button id="C" class="btnR">C</button>
+                        <button id="D" class="btnR">D</button>
+                    </div>
+
+                </div>
+
+                <!--Save score popup button-->
+
+                <div id="score" class="hide">
+
+                </div>
+                <a href="save_score.html">
+                    <button id="savebtn" class="hide">Save Score</button></a>
+
+
+            </section>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+    <script src=script.js></script>
+</body>
+
+</html>
