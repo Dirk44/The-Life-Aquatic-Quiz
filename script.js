@@ -76,10 +76,6 @@ function showQuestion(questions) {
 
 
 
-
-
-
-
 // Questions
 
 var questions = [{
@@ -141,15 +137,7 @@ var questions = [{
 }
 ];
 
-
-
-
 /*EVENTS*/
-
-
-
-
-
 viewHighscores.addEventListener("click", () => {
     highScore1.classList.remove("hide");
 
@@ -178,37 +166,17 @@ answer.addEventListener("click", (e) => {
         counter -= 10;
     }
 
-
-
-    // check highscore
-
-
-
-
-
-    currentQuestionIndex = currentQuestionIndex + 1
+// check highscore
+currentQuestionIndex = currentQuestionIndex + 1
     if (currentQuestionIndex >= 6) {
         // end of quiz
         localStorage.setItem("mostRecentScore", scoreTally);
         clearInterval(counter = 0);
         questionContainer.classList.add("hide");
         save.classList.remove("hide");
-
-
-        // finalScore();
-
-
-
-        // storeScore();
-
-
-
-    } else {
+} else {
         nextQuestion()
-
-
-    };
-
+};
 });
 
   // View Highscores
